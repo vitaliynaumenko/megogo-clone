@@ -1,15 +1,24 @@
 import './app.css';
+import Header from "./components/Header";
+import Slider from "./components/Slider";
+import ActualLinks from "./components/ActualLinks";
+import SmallGridGallery from "./components/SmallGridGallery";
+import MediumGridGallery from "./components/MediumGridGallery";
+import ShowMore from "./components/ShowMore";
+import Footer from "./components/Footer";
 
 function App() {
-  return (
-    <div className="app bg-red-400">
-        <div className="mx-auto max-w-7xl">
-            <h1 className='text-center tex-2xl'>
-                hello Megogo clone
-            </h1>
+    return (
+        <div className="app bg-red-400">
+            <Header/>
+            <Slider/>
+            <ActualLinks/>
+            <SmallGridGallery/>
+            <MediumGridGallery/>
+            <ShowMore/>
+            <Footer/>
         </div>
-    </div>
-  );
+    );
 }
 
 export default App;
